@@ -34,7 +34,7 @@ std::string POST(std::string url, std::string message) {
 }
 
 vector<string> getNewMessages() {
-    string response = GET("10.24.221.117:5001/api/v1/chats");
+    string response = GET("10.24.221.149:5001/api/v1/chats");
 
     // parse messages into vector of strings
     stringstream ss(response);
@@ -55,7 +55,7 @@ vector<string> getNewMessages() {
 }
 
 string postNewMessage(string newMessage) {
-    std::string response = POST("10.24.221.117:5001/api/v1/chats", newMessage);
+    std::string response = POST("10.24.221.149:5001/api/v1/chats", newMessage);
     return response;
 }
 
