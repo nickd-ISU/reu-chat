@@ -49,6 +49,9 @@ int main()
 			std::cout << "Enter your message: ";
 			std::cin.ignore();
 			std::getline(std::cin, message);
+			if(message == "rodney taking long time") {
+				cout << "wow" << endl;
+			}
 			if (POST(url, message) == "200") {
 				std::cout << "Message sent successfully" << std::endl;
 			}
