@@ -38,7 +38,7 @@ int main()
 			std::vector<std::string> messageList = splitString(messages, ',');
 			int i = 0;
 			std::cout << "\nChat messages:" << std::endl;
-			while (i < 10 && i < messageList.size()) {
+			while (i < 20 && i < messageList.size()) {
 				std::cout << i << ": " << messageList[messageList.size() - i - 1] << std::endl;
 				i++;
 			}
